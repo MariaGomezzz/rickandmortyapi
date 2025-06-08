@@ -19,7 +19,7 @@ export default function EpisodesPage() {
     <>
       <div>
         <div className="text-center m-8">
-          <h2 className="text-2xl font-black">Rick y Morty Personajes</h2>
+          <h2 className="text-2xl font-black">Rick y Morty Episodios</h2>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4">
