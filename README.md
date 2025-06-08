@@ -1,12 +1,91 @@
-# React + Vite
+# Rick and Morty Explorer 🛸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web que consume la API oficial de Rick and Morty para mostrar personajes, episodios y ubicaciones del universo de la serie.
 
-Currently, two official plugins are available:
+## 🚀 Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esta aplicación permite explorar el universo de **Rick and Morty** a través de una interfaz simple y amigable. Puedes ver personajes, episodios y planetas (ubicaciones). Se implementa navegación entre secciones y se está trabajando en una funcionalidad de paginación.
 
-## Expanding the ESLint configuration
+## 🖼️ Captura de Pantalla
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Captura de pantalla](./src/assets/icons8-rick-sanchez.svg)
+
+## 🛠️ Tecnologías utilizadas
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [React Router DOM](https://reactrouter.com/)
+- [Rick and Morty API](https://rickandmortyapi.com/)
+- CSS puro
+
+## 📁 Estructura del proyecto
+
+\`\`\`
+src/
+├── assets/           # Imágenes y recursos estáticos
+├── components/       # Componentes reutilizables (Character, Episode, Navbar, etc.)
+├── pages/            # Vistas principales (CharactersPage, EpisodesPage, etc.)
+├── routes/           # Definición de rutas (Router.jsx)
+├── services/         # Lógica para consumo de API
+├── App.jsx           # Componente raíz
+├── main.jsx          # Punto de entrada de React
+\`\`\`
+
+## 📦 Instalación
+
+1. Clona este repositorio:
+
+\`\`\`bash
+git clone https://github.com/tu-usuario/rick-and-morty.git
+cd rick-and-morty
+\`\`\`
+
+2. Instala las dependencias:
+
+\`\`\`bash
+npm install
+\`\`\`
+
+3. Inicia la aplicación:
+
+\`\`\`bash
+npm run dev
+\`\`\`
+
+4. Abre tu navegador en:
+
+\`\`\`
+http://localhost:5173
+\`\`\`
+
+## 🧭 Funcionalidades
+
+- ✅ Visualización de personajes
+- ✅ Visualización de episodios
+- ✅ Visualización de ubicaciones
+- ✅ Navegación entre secciones
+
+## 🔧 En desarrollo
+
+- [ ] Paginación funcional en personajes, episodios y ubicaciones
+- [ ] Estilos mejorados para experiencia responsive
+- [ ] Buscador por nombre o filtro por especie
+
+## 🤝 Contribuciones
+
+¡Las contribuciones son bienvenidas!
+
+1. Haz un fork del repositorio
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`)
+3. Realiza tus cambios y haz commit (`git commit -m 'Agregar nueva funcionalidad'`)
+4. Sube tus cambios (`git push origin feature/nueva-funcionalidad`)
+5. Abre un Pull Request
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT.
+
+## 👤 Autor
+
+Desarrollado por [Isabel Gómez Cataño](https://github.com/MariaGomezzz)
