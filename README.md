@@ -6,9 +6,6 @@ Una aplicación web que consume la API oficial de Rick and Morty para mostrar pe
 
 Esta aplicación permite explorar el universo de **Rick and Morty** a través de una interfaz simple y amigable. Puedes ver personajes, episodios y planetas (ubicaciones). Se implementa navegación entre secciones y se está trabajando en una funcionalidad de paginación.
 
-## 🖼️ Captura de Pantalla
-
-![Captura de pantalla](./src/assets/icons8-rick-sanchez.svg)
 
 ## 🛠️ Tecnologías utilizadas
 
