@@ -15,7 +15,6 @@ Esta aplicación permite explorar el universo de **Rick and Morty** a través de
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [React Router DOM](https://reactrouter.com/)
 - [Rick and Morty API](https://rickandmortyapi.com/)
 - CSS puro
 
