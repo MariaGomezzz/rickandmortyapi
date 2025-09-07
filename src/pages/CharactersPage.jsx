@@ -61,6 +61,11 @@ export default function CharactersPage() {
     }));
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Datos enviados:', formData);
+  }
+
   return (
     <>
       <div className="text-center m-8">
@@ -68,46 +73,50 @@ export default function CharactersPage() {
       </div>
 
       {/* Sección de filtros */}
-      <div className="flex gap-3 content-center">
-        {/* Campo de búsqueda */}
+      <form onSubmit={handleSubmit}>
         <div className="flex gap-3 content-center">
-          <input
-            type="text"
-            name="search"
-            placeholder="Buscar personaje..."
-            className="border p-2 rounded w-full max-w-md mb-6"
-            value={filtersSelected.search}
-            onChange={handleFilterChange}
-          />
+          {/* Campo de búsqueda */}
+          <div className="flex gap-3 content-center">
+            <input
+              type="text"
+              name="search"
+              placeholder="Buscar personaje..."
+              className="border p-2 rounded w-full max-w-md mb-6"
+              value={filtersSelected.search}
+              onChange={handleFilterChange}
+            />
+          </div>
+
+          {/* Select para filtrar por estado */}
+          <select
+            name="status"
+            value={filtersSelected.status}
+            onChange={handleFilterChange} // Cambia el estado al seleccionar una opción
+            className="border p-2 rounded h-10"
+          >
+            <option value="">Todos los estados</option>
+            <option value="Alive">Vivo</option>
+            <option value="Dead">Muerto</option>
+            <option value="unknown">Desconocido</option>
+          </select>
+
+          {/* Select para filtrar por genero */}
+          <select
+            name="gender"
+            value={filtersSelected.gender}
+            onChange={handleFilterChange} // Cambia el estado al seleccionar una opción
+            className="border p-2 rounded h-10"
+          >
+            <option value="">Todos los genéros</option>
+            <option value="Female">Mujer</option>
+            <option value="Male">Hombre</option>
+            <option value="Genderless">Sin genéro</option>
+            <option value="unknown">Desconocido</option>
+          </select>
+
+          <button type="submit">Buscar</button>
         </div>
-
-        {/* Select para filtrar por estado */}
-        <select
-          name="status"
-          value={filtersSelected.status}
-          onChange={handleFilterChange} // Cambia el estado al seleccionar una opción
-          className="border p-2 rounded h-10"
-        >
-          <option value="">Todos los estados</option>
-          <option value="Alive">Vivo</option>
-          <option value="Dead">Muerto</option>
-          <option value="unknown">Desconocido</option>
-        </select>
-
-        {/* Select para filtrar por genero */}
-        <select
-          name="gender"
-          value={filtersSelected.gender}
-          onChange={handleFilterChange} // Cambia el estado al seleccionar una opción
-          className="border p-2 rounded h-10"
-        >
-          <option value="">Todos los genéros</option>
-          <option value="Female">Mujer</option>
-          <option value="Male">Hombre</option>
-          <option value="Genderless">Sin genéro</option>
-          <option value="unknown">Desconocido</option>
-        </select>
-      </div>
+      </form>
 
       {/* Contenedor de tarjetas de personajes */}
       <div className="flex flex-wrap justify-center gap-4">
